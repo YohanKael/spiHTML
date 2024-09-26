@@ -1,0 +1,54 @@
+.custom-home{
+    color: #054161 !important;
+    font-family: 'Arial', sans-serif !important;
+    font-size: small !important;
+    font-weight: bold !important;
+    touch-action: manipulation !important;
+    background-color: #F4F4F4 !important;
+    transition: color 0.3s ease !important;
+}
+
+.custom-off-canvas-btn{
+    color: #054161 !important;
+}
+
+.custom-off-canvas-btn:hover{
+    background-color:#0578b2 !important ;
+    color: white !important;
+}
+
+
+.custom-nav-link {
+    color: #054161!important;
+
+}
+
+.custom-nav-link:hover {
+    background-color:#0578b2 !important ;
+    color: white !important;
+
+}
+
+.LogoImage img{
+    width: 50%;
+    height: auto; 
+    cursor: pointer;
+    padding: 0;
+}
+
+.title{
+    color: #054161!important;
+
+}
+
+header {
+    background-color: #F4F4F4;
+
+}
+
+
+.custom-home:hover{
+    background-color: none;
+    color: #0578b2  !important;
+
+}

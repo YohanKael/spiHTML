@@ -1,0 +1,53 @@
+.footer {
+    background-color: #f4f4f4;
+}
+
+.footerAddress {
+    font-family: "Quicksand", sans-serif;
+    color: #054161;
+    font-size: 13px;
+    text-align: center;
+}
+.footer {
+    background-color: #f4f4f4;
+    height: 100%;
+}
+
+.footerAddress {
+    font-family: "Quicksand", sans-serif;
+    color: #054161;
+    font-size: 13px;
+}
+
+.custom-color {
+    color: #054161;
+    font-family: "Quicksand", sans-serif;
+}
+
+.custom-icon {
+    font-size: 24px;
+    color: #054161;
+}
+
+
+.whatsappIcon{
+    font-size: x-large;
+    color: green!important;
+}
+
+.whats-btn{
+    border: none;
+    color: green;
+    background-color: #f4f4f4;
+}
+
+@media (max-width: 576px) {
+    .footerAddress{
+        font-size:10px;
+    }   
+
+    .text-custom{
+        font-size: 15px !important;
+        margin-bottom: 20px;
+    }
+}

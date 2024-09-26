@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.TextAboutUs {
+    font-family: "Montserrat", sans-serif;
+    text-align: justify;
+    font-size: medium;
+    color: #054161;
+    line-height: 1.2;
+    flex: 1;
+    width: 100%;
+    max-width: 100%;
+}
+
+main{
+    height: 100% !important;
+}
+
+body{
+    height: 100% !important;
+} 
+
+.content-wrap {
+    flex: 1 !important; 
+}
