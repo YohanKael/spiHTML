@@ -1,7 +1,7 @@
 // Lista de imagens da galeria
 const galleryImages = [
-    { img: "imagens\certificates\certificate.png" },
-    { img: "imagens\certificates\certificate2.png" },
+    { img: "./imagens/certificates/certificate.png" },
+    { img: "./imagens/certificates/certificate.png" },
 ];
 
 let slideNumber = 0;
@@ -32,6 +32,7 @@ function handleCloseModal() {
 
 // Atualiza a imagem no modal
 function updateModal() {
+    
     fullScreenImage.src = galleryImages[slideNumber].img;
 }
 
@@ -64,26 +65,6 @@ function handleKeyDown(event) {
     }
 }
 
-// // Renderiza as imagens da galeria
-// function renderGallery() {
-//     galleryImages.forEach((image, index) => {
-//         const imageContainer = document.createElement("div");
-//         imageContainer.className = "single col-sm-4 col-md-4 col-lg-2 mb-2 align-items-center align-self-center justify-content-center";
-//         imageContainer.onclick = () => handleOpenModal(index);
-
-//         const imgElement = document.createElement("img");
-//         imgElement.src = image.img;
-//         imgElement.alt = "certificatesGalleryimages";
-
-//         imageContainer.appendChild(imgElement);
-//         galleryContainer.appendChild(imageContainer);
-//     });
-// }
-
-// // Inicializa a galeria
-// renderGallery();
-
-// Eventos de clique nos botões
 btnClose.onclick = handleCloseModal;
 btnPrev.onclick = prevSlide;
 btnNext.onclick = nextSlide;

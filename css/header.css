@@ -52,3 +52,18 @@ header {
     color: #0578b2  !important;
 
 }
+
+.custom-home-color{
+    color: #054161 !important;
+    font-family: 'Arial', sans-serif !important;
+    font-size: small !important;
+    font-weight: bold !important;
+    touch-action: manipulation !important;
+    background-color: #F4F4F4 !important;
+    transition: color 0.3s ease !important;
+}
+
+.custom-home-color:hover{
+    color: white !important;
+    background-color: #054161!important;
+}
