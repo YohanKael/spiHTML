@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+#footer {
+    margin-top: auto;
+}
+
+
+.wireTestGalleryWrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+
+.wireTestSingle {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 140px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.wireTestSingle img {
+    max-width: 100%;
+}
+
+.wireTestSingle img:hover {
+    transform: scale(1.04);
+    opacity: 0.8;
+}
+
+
+.wireTestSliderWrap {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.wireTestBtnClose,
+.wireTestBtnPrev,
+.wireTestBtnNext {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0.8;
+    color: #fff;
+    z-index: 10001;
+    font-size: 2rem;
+    transition: opacity 0.3s ease;
+}
+
+.wireTestSliderWrap .wireTestBtnClose,
+.wireTestSliderWrap .wireTestBtnPrev,
+.wireTestSliderWrap .wireTestBtnNext {
+    opacity: 1;
+}
+
+.wireTestBtnClose {
+    top: 5%;
+    right: 5%;
+    height: 35px;
+}
+
+.wireTestBtnPrev {
+    left: 5%;
+    height: 35px;
+}
+
+.wireTestBtnNext {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5%;
+    height: 35px;
+
+}
+
+
+.buttonCapabilities {
+    margin-bottom: 2%;
+    color: #ffff;
+    background-color: #054161;
+    font-weight: 400;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 30px;
+}
+
+.buttonCapabilities:hover {
+    cursor: pointer;
+    filter: brightness(1.2);
+    transform: scale(1.05);
+}
+
+.textCapabilities {
+    color: #054161;
+    margin-left: 2%;
+}
+
+.wireTestfullScreenImage {
+    width: 60%;
+}
+
+.img-custom-size img {
+    width: 300px;
+}
+
+
+@media (max-width: 1423px) {
+    .wireTestBtnNext {
+        transform: translateY(-50%);
+        right: 5%;
+        height: 35px;
+    }
+
+    .wireTestBtnPrev {
+        height: 35px;
+        left: 5%;
+
+    }
+
+    .wireTestBtnClose {
+        top: 10%;
+        right: 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .wireTestBtnClose {
+        top: 25%;
+        height: 30px;
+    }
+
+    .wireTestBtnNext {
+        height: 25px;
+    }
+
+    .wireTestBtnPrev {
+        height: 25px;
+    }
+}
+
+
+
+@media (max-width: 500px) {
+    .wireTestBtnClose {
+        top: 15%;
+        right: 3%;
+    }
+
+    .wireTestBtnNext {
+        right: 3%;
+    }
+
+    .wireTestBtnPrev {
+        left: 3%;
+    }
+
+    .wireTestfullScreenImage {
+        width: 75%;
+    }
+
+    .wireTestSingle {
+        width: 120px;
+        height: 100px;
+        margin-top: 20px;
+    }
+
+}

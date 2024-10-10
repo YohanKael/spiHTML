@@ -1,0 +1,185 @@
+.machineGalleryWrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+
+.machineSingle {
+    display: flex;
+    justify-content: center;
+    max-width: 180px;
+    height: 140px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.machineSingle img {
+    max-width: 100%;
+}
+
+.machineSingle img:hover {
+    transform: scale(1.04);
+    opacity: 0.8;
+}
+
+
+.machineSliderWrap {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+}
+
+.machineBtnClose,
+.machineBtnPrev,
+.machineBtnNext {
+    position: absolute;
+    cursor: pointer;
+    opacity: 0.8;
+    color: #fff;
+    z-index: 10001;
+    font-size: 2rem;
+    transition: opacity 0.3s ease;
+}
+
+
+.machineSliderWrapliderWrap .machineBtnClose,
+.machineSliderWrap .machineBtnPrev,
+.machineSliderWrap .machineBtnNext {
+    opacity: 1;
+}
+
+.machineBtnClose {
+    top: 65px;
+    right: 5%;
+    height: 35px;
+
+}
+
+.machineBtnPrev {
+    left: 5%;
+    height: 35px;
+}
+
+.machineBtnNext {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5%;
+    height: 35px;
+
+}
+
+
+.buttonCapabilities {
+    margin-bottom: 2%;
+    color: #ffff;
+    background-color: #054161;
+    font-weight: 400;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 30px;
+}
+
+.buttonCapabilities:hover {
+    cursor: pointer;
+    filter: brightness(1.2);
+    transform: scale(1.05);
+}
+
+.img-custom-size img {
+    width: 300px;
+}
+
+.textCapabilities {
+    color: #054161;
+    margin-left: 2%;
+}
+
+.FullScreenImage {
+    width: 75%;
+    height: auto;
+}
+
+
+@media (max-width: 1423px) {
+    .machineBtnNext {
+        transform: translateY(-50%);
+        right: 5%;
+        height: 35px;
+    }
+
+    .machineBtnPrev {
+        height: 35px;
+        left: 5%;
+
+    }
+
+    .machineBtnClose {
+        top: 10%;
+        right: 5%;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .machineBtnClose {
+        top: 25%;
+        height: 30px;
+    }
+
+    .machineBtnNext {
+        height: 25px;
+    }
+
+    .machineBtnPrev {
+        height: 25px;
+    }
+}
+
+
+
+@media (max-width: 500px) {
+    .machineBtnClose {
+        top: 30%;
+        height: 25px;
+    }
+
+    .machineBtnNext {
+        height: 25px;
+    }
+
+    .machineBtnPrev {
+        height: 25px;
+    }
+
+    .machineSingle {
+        display: flex;
+        justify-content: center;
+        width: 120px;
+        height: 100px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .machineLogoCapabilities img {
+        margin-left: 2%;
+        width: 80%;
+    }
+}

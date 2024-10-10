@@ -19,6 +19,10 @@ body {
     flex-grow: 1;
 }
 
+#footer {
+    margin-top: auto;
+}
+
 .img-custom-size {
     width: 300px;
 }
