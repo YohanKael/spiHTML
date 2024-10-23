@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spi Automotive</title>
+    <link href="./css/moldesCapabilities.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="content">
+        <div id="header"></div>
+
+        <script>
+            fetch('header.html')
+                .then(response => response.text())
+                .then(data => document.getElementById('header').innerHTML = data);
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => document.getElementById('footer').innerHTML = data);
+        </script>
+
+
+        <main>
+            <div id="content">
+                <div class="moldesSliderWrap" id="moldesSliderWrap" style="display: none;">
+                    <i class="fas fa-circle-xmark moldesBtnClose" onclick="handleCloseModal()"></i>
+                    <i class="fas fa-circle-chevron-left moldesBtnPrev" onclick="prevSlide()"></i>
+                    <i class="fas fa-circle-chevron-right moldesBtnNext" onclick="nextSlide()"></i>
+                    <img id="fullScreenImage" class="FullScreenImage img-fluid" src="" alt="">
+                </div>
+
+                <div class="img-custom-size img-fluid ms-2">
+                    <img src="./imagens/logos/logoMolds.png" alt="Moldes logo">
+                </div>
+
+                <div class="moldesGalleryWrap mx-2" id="moldesGalleryWrap">
+                    <div class="moldesSingle" onclick="handleOpenModal(0)">
+                        <img src="./imagens/moldes/molde.png" alt="moldes">
+                    </div>
+                    <div class="moldesSingle" onclick="handleOpenModal(1)">
+                        <img src="./imagens/moldes/molde2.png" alt="moldes">
+                    </div>
+                    <div class="moldesSingle" onclick="handleOpenModal(2)">
+                        <img src="./imagens/moldes/molde3.png" alt="moldes">
+                    </div>
+                    <div class="moldesSingle" onclick="handleOpenModal(3)">
+                        <img src="./imagens/moldes/molde4.png" alt="moldes">
+                    </div>
+                    <div class="moldesSingle" onclick="handleOpenModal(4)">
+                        <img src="./imagens/moldes/molde5.png" alt="moldes">
+                    </div>
+                    <div class="moldesSingle" onclick="handleOpenModal(5)">
+                        <img src="./imagens/moldes/molde6.png" alt="moldes">
+                    </div>
+                    <div class="moldesSingle" onclick="handleOpenModal(6)">
+                        <img src="./imagens/moldes/molde7.png" alt="moldes">
+                    </div>
+                    <div class="moldesSingle" onclick="handleOpenModal(7)">
+                        <img src="./imagens/moldes/molde8.png" alt="moldes">
+                    </div>
+                    <div class="moldesSingle" onclick="handleOpenModal(8)">
+                        <img src="./imagens/moldes/molde9.png" alt="moldes">
+                    </div>
+
+                    
+                </div>
+
+                <div class="text-center text-nowrap my-3">
+                    <a href="engineerCapabilities.html">
+                        <button class="buttonCapabilities">Back to Engineer Capabilities</button>
+                    </a>
+                </div>
+            </div>
+
+            
+        </main>
+        
+        <div id="footer"></div>
+    </div>
+    
+    
+    
+    <script src="./javascript/moldesCapabilities.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
